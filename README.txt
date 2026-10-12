@@ -1,0 +1,1 @@
+Open index.html with VS Code Live Server. Click Load Audio and select an MP3/WAV/etc for genuine beat-reactive spectrum. YouTube playback remains available before loading local audio, but YouTube audio cannot be analyzed by the Web Audio API. Files stay on your device.

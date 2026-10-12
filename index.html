@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#100b15" />
+  <title>NightDrive — Your Music, Your Vibe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="scene" aria-label="NightDrive music player">
+    <div class="backdrop" aria-hidden="true"></div>
+    <div class="shade" aria-hidden="true"></div>
+    <section class="player" aria-label="Music playback controls">
+      <canvas id="spectrum" aria-label="Audio spectrum visualization"></canvas>
+      <input id="seek" type="range" min="0" max="1000" value="0" aria-label="Song progress" />
+      <div class="transport">
+        <button class="icon-btn" id="previous" aria-label="Previous" title="Back 10 seconds"><svg viewBox="0 0 24 24"><path d="M6 5v14M19 6l-10 6 10 6V6Z"/></svg></button>
+        <button class="play-btn" id="play" aria-label="Play" title="Play"><svg id="playIcon" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"/></svg></button>
+        <button class="icon-btn" id="next" aria-label="Next" title="Forward 10 seconds"><svg viewBox="0 0 24 24"><path d="M18 5v14M5 6l10 6-10 6V6Z"/></svg></button>
+      </div>
+      <button class="fullscreen-btn" id="fullscreen" aria-label="Enter fullscreen" title="Fullscreen (Esc to exit)"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg></button>
+    </section>
+    <div class="youtube-host" id="youtubeHost" aria-hidden="true"></div>
+  </main>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
